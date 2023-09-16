@@ -9,12 +9,20 @@ Note: you'll have to filter the data and do the calculations yourself.
 - Steam controller
 - Nintendo Switch controllers 
 - Nintendo Wii Remotes with Wii MotionPlus
-- Probably more in future (basically everything that can act as a DSU server)   
+- [Probably more in future (basically everything that can act as a DSU server)](https://wiki.dolphin-emu.org/index.php?title=DSU_Client#DSU_Server_Applications)   
 
-Guide: https://cemuhook.sshnuke.net/padudpserver.html
+Guide: [https://cemuhook.sshnuke.net/padudpserver.html](https://cemuhook.sshnuke.net/padudpserver.html)
+
 ## How to use?
 - Step 1: Your unity project should have instances of *New UDP Receive*, *DSU Client* and *Controller Data Requester*.  
 - Step 2: Set the device's port and ip address into *New UDP Receive* (you can also change the local port)  
 - Step 3: Start receive using the *Controller Data Requester* component.  
 - Step 4: Access device data: DSUClient.ControllerData.controllerSlots[slot];
-- Tip: There's an example of using and accessing that data: *dsuDataVisualizer* in the sample scene.
+- Tip: There's an example of using and accessing that data: *dsuDataVisualizer* in the sample scene. 
+ 
+## Third-party stuff:
+- [NuGetForUnity](https://github.com/GlitchEnzo/NuGetForUnity)
+- [Crc32.NET](https://github.com/force-net/Crc32.NET)
+
+## Todo list:
+search "//todo" in code :D
